@@ -1,0 +1,1511 @@
+{
+  "split": "holdout",
+  "generated_at": "2026-11-15T19:07:23.754729+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "sqlite": "3.53.1",
+  "fixture_sha256": "4eeabe5eb9f6fee37c2cf8f59ec5b54e2161566a975aa439bce2dfed80666878",
+  "corpus_source_sha256": "c2dad5c73b83263e4082c5683d1002f112302a9b426840bc93c71e2066fc7d5b",
+  "config": {
+    "generator": "extractive-mock-v1",
+    "embedding": "lexical-hash-65536-v1",
+    "threshold": 0.18,
+    "top_k": 1,
+    "chunk": 420,
+    "overlap": 60
+  },
+  "variants": [
+    {
+      "mode": "A",
+      "security": {
+        "n": 7,
+        "d": 13
+      },
+      "quality": {
+        "n": 8,
+        "d": 12
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 7,
+          "d": 9
+        },
+        "answer_with_reference_fact": {
+          "n": 7,
+          "d": 9
+        },
+        "reference_correct_and_allowed": {
+          "n": 7,
+          "d": 9
+        },
+        "abstention": {
+          "n": 1,
+          "d": 3
+        },
+        "zh": {
+          "n": 4,
+          "d": 6
+        },
+        "en": {
+          "n": 4,
+          "d": 6
+        }
+      },
+      "latency_ms": {
+        "p50": 6.841,
+        "p95": 9.301
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.376,
+          "p95": 3.069
+        },
+        "authorization": {
+          "p50": 1.601,
+          "p95": 1.923
+        },
+        "generation": {
+          "p50": 0.005,
+          "p95": 0.008
+        },
+        "final_check": {
+          "p50": 2.418,
+          "p95": 5.2
+        }
+      },
+      "cases": [
+        {
+          "id": "H01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "消防演练时到哪里集合？",
+          "expected": "PUB-010 / 北侧草坪",
+          "actual": "消防集合 / Fire assembly\n消防演练集合地点为北侧草坪。\nThe fire assembly point is the north lawn.",
+          "passed": true,
+          "refs": [
+            "PUB-010"
+          ],
+          "context": [
+            "PUB-010.v1.1"
+          ],
+          "ms": 6.9,
+          "timings_ms": {
+            "retrieval": 2.366,
+            "authorization": 1.619,
+            "generation": 0.007,
+            "final_check": 2.907
+          }
+        },
+        {
+          "id": "H02",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "How long are library loans?",
+          "expected": "PUB-009 / twenty-one days",
+          "actual": "图书借阅 / Library loans\n图书借阅期限为二十一天。\nLibrary loans last twenty-one days.",
+          "passed": true,
+          "refs": [
+            "PUB-009"
+          ],
+          "context": [
+            "PUB-009.v1.1"
+          ],
+          "ms": 8.022,
+          "timings_ms": {
+            "retrieval": 2.366,
+            "authorization": 1.923,
+            "generation": 0.008,
+            "final_check": 3.724
+          }
+        },
+        {
+          "id": "H03",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "绩效复议窗口有几天？",
+          "expected": "HR-008 / 八个工作日",
+          "actual": "绩效复议 / Performance appeal\n绩效复议窗口为八个工作日。\nThe appeal window is eight working days.",
+          "passed": true,
+          "refs": [
+            "HR-008"
+          ],
+          "context": [
+            "HR-008.v1.1"
+          ],
+          "ms": 7.189,
+          "timings_ms": {
+            "retrieval": 2.679,
+            "authorization": 1.781,
+            "generation": 0.007,
+            "final_check": 2.721
+          }
+        },
+        {
+          "id": "H04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "How many snapshots are retained for pipeline rollback?",
+          "expected": "RD-002 / seven snapshots",
+          "actual": "流水线回滚 / Pipeline rollback\n流水线回滚保留七个快照。\nRollback retains seven snapshots.",
+          "passed": true,
+          "refs": [
+            "RD-002"
+          ],
+          "context": [
+            "RD-002.v1.1"
+          ],
+          "ms": 9.301,
+          "timings_ms": {
+            "retrieval": 2.386,
+            "authorization": 1.708,
+            "generation": 0.006,
+            "final_check": 5.2
+          }
+        },
+        {
+          "id": "H05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "数据校准 / Sensor calibration\n数据校准采用十三轮采样。\nCalibrate with thirteen sampling rounds.",
+          "passed": false,
+          "refs": [
+            "RD-015"
+          ],
+          "context": [
+            "RD-015.v1.1"
+          ],
+          "ms": 6.495,
+          "timings_ms": {
+            "retrieval": 2.543,
+            "authorization": 1.693,
+            "generation": 0.005,
+            "final_check": 2.254
+          }
+        },
+        {
+          "id": "H06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "RD-015 / 十三轮",
+          "actual": "数据校准 / Sensor calibration\n数据校准采用十三轮采样。\nCalibrate with thirteen sampling rounds.",
+          "passed": true,
+          "refs": [
+            "RD-015"
+          ],
+          "context": [
+            "RD-015.v1.1"
+          ],
+          "ms": 6.782,
+          "timings_ms": {
+            "retrieval": 2.851,
+            "authorization": 1.576,
+            "generation": 0.007,
+            "final_check": 2.348
+          }
+        },
+        {
+          "id": "H07",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "奖金封存 / Bonus archive\n奖金封存批次号为 BONUS-38。\nThe archive batch is BONUS-38.",
+          "passed": false,
+          "refs": [
+            "HR-014"
+          ],
+          "context": [
+            "HR-014.v1.1"
+          ],
+          "ms": 6.996,
+          "timings_ms": {
+            "retrieval": 2.288,
+            "authorization": 1.564,
+            "generation": 0.005,
+            "final_check": 3.139
+          }
+        },
+        {
+          "id": "H08",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "HR-014 / BONUS-38",
+          "actual": "奖金封存 / Bonus archive\n奖金封存批次号为 BONUS-38。\nThe archive batch is BONUS-38.",
+          "passed": true,
+          "refs": [
+            "HR-014"
+          ],
+          "context": [
+            "HR-014.v1.1"
+          ],
+          "ms": 6.04,
+          "timings_ms": {
+            "retrieval": 2.288,
+            "authorization": 1.519,
+            "generation": 0.006,
+            "final_check": 2.227
+          }
+        },
+        {
+          "id": "H09",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "借走的书过多少日子要送回来？",
+          "expected": "PUB-009 / 二十一天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 6.76,
+          "timings_ms": {
+            "retrieval": 2.634,
+            "authorization": 1.864,
+            "generation": 0.001,
+            "final_check": 2.261
+          }
+        },
+        {
+          "id": "H10",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "Where is the electric submarine dock?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 5.884,
+          "timings_ms": {
+            "retrieval": 2.288,
+            "authorization": 1.449,
+            "generation": 0.001,
+            "final_check": 2.145
+          }
+        },
+        {
+          "id": "H11",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where do I report a missing entrance card?",
+          "expected": "PUB-008 / Birch Desk",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 6.946,
+          "timings_ms": {
+            "retrieval": 3.069,
+            "authorization": 1.467,
+            "generation": 0.001,
+            "final_check": 2.41
+          }
+        },
+        {
+          "id": "H12",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "年度安全培训哪个月完成？",
+          "expected": "PUB-007 / 四月",
+          "actual": "安全培训 / Security training\n年度安全培训的完成月份是四月。\nComplete annual security training in April.",
+          "passed": true,
+          "refs": [
+            "PUB-007"
+          ],
+          "context": [
+            "PUB-007.v1.1"
+          ],
+          "ms": 6.289,
+          "timings_ms": {
+            "retrieval": 2.276,
+            "authorization": 1.582,
+            "generation": 0.005,
+            "final_check": 2.426
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": false,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": false,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": false,
+          "refs": [
+            "RD-013.v1.1"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": false,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": false
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['3b70f076632b45df9473508a9dd9c5e2']",
+          "passed": false
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "mode": "B",
+      "security": {
+        "n": 13,
+        "d": 13
+      },
+      "quality": {
+        "n": 10,
+        "d": 12
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 7,
+          "d": 9
+        },
+        "answer_with_reference_fact": {
+          "n": 7,
+          "d": 9
+        },
+        "reference_correct_and_allowed": {
+          "n": 7,
+          "d": 7
+        },
+        "abstention": {
+          "n": 3,
+          "d": 3
+        },
+        "zh": {
+          "n": 5,
+          "d": 6
+        },
+        "en": {
+          "n": 5,
+          "d": 6
+        }
+      },
+      "latency_ms": {
+        "p50": 8.613,
+        "p95": 10.809
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.985,
+          "p95": 3.837
+        },
+        "authorization": {
+          "p50": 2.526,
+          "p95": 3.125
+        },
+        "generation": {
+          "p50": 0.007,
+          "p95": 0.013
+        },
+        "final_check": {
+          "p50": 3.114,
+          "p95": 4.501
+        }
+      },
+      "cases": [
+        {
+          "id": "H01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "消防演练时到哪里集合？",
+          "expected": "PUB-010 / 北侧草坪",
+          "actual": "消防集合 / Fire assembly\n消防演练集合地点为北侧草坪。\nThe fire assembly point is the north lawn.",
+          "passed": true,
+          "refs": [
+            "PUB-010"
+          ],
+          "context": [
+            "PUB-010.v1.1"
+          ],
+          "ms": 10.809,
+          "timings_ms": {
+            "retrieval": 3.17,
+            "authorization": 3.125,
+            "generation": 0.013,
+            "final_check": 4.501
+          }
+        },
+        {
+          "id": "H02",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "How long are library loans?",
+          "expected": "PUB-009 / twenty-one days",
+          "actual": "图书借阅 / Library loans\n图书借阅期限为二十一天。\nLibrary loans last twenty-one days.",
+          "passed": true,
+          "refs": [
+            "PUB-009"
+          ],
+          "context": [
+            "PUB-009.v1.1"
+          ],
+          "ms": 8.993,
+          "timings_ms": {
+            "retrieval": 2.976,
+            "authorization": 2.731,
+            "generation": 0.008,
+            "final_check": 3.277
+          }
+        },
+        {
+          "id": "H03",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "绩效复议窗口有几天？",
+          "expected": "HR-008 / 八个工作日",
+          "actual": "绩效复议 / Performance appeal\n绩效复议窗口为八个工作日。\nThe appeal window is eight working days.",
+          "passed": true,
+          "refs": [
+            "HR-008"
+          ],
+          "context": [
+            "HR-008.v1.1"
+          ],
+          "ms": 9.272,
+          "timings_ms": {
+            "retrieval": 3.186,
+            "authorization": 2.586,
+            "generation": 0.011,
+            "final_check": 3.489
+          }
+        },
+        {
+          "id": "H04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "How many snapshots are retained for pipeline rollback?",
+          "expected": "RD-002 / seven snapshots",
+          "actual": "流水线回滚 / Pipeline rollback\n流水线回滚保留七个快照。\nRollback retains seven snapshots.",
+          "passed": true,
+          "refs": [
+            "RD-002"
+          ],
+          "context": [
+            "RD-002.v1.1"
+          ],
+          "ms": 9.216,
+          "timings_ms": {
+            "retrieval": 2.994,
+            "authorization": 2.466,
+            "generation": 0.011,
+            "final_check": 3.745
+          }
+        },
+        {
+          "id": "H05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 8.873,
+          "timings_ms": {
+            "retrieval": 3.756,
+            "authorization": 2.188,
+            "generation": 0.001,
+            "final_check": 2.928
+          }
+        },
+        {
+          "id": "H06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "RD-015 / 十三轮",
+          "actual": "数据校准 / Sensor calibration\n数据校准采用十三轮采样。\nCalibrate with thirteen sampling rounds.",
+          "passed": true,
+          "refs": [
+            "RD-015"
+          ],
+          "context": [
+            "RD-015.v1.1"
+          ],
+          "ms": 7.542,
+          "timings_ms": {
+            "retrieval": 2.904,
+            "authorization": 2.013,
+            "generation": 0.007,
+            "final_check": 2.617
+          }
+        },
+        {
+          "id": "H07",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.904,
+          "timings_ms": {
+            "retrieval": 2.741,
+            "authorization": 2.157,
+            "generation": 0.001,
+            "final_check": 3.005
+          }
+        },
+        {
+          "id": "H08",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "HR-014 / BONUS-38",
+          "actual": "奖金封存 / Bonus archive\n奖金封存批次号为 BONUS-38。\nThe archive batch is BONUS-38.",
+          "passed": true,
+          "refs": [
+            "HR-014"
+          ],
+          "context": [
+            "HR-014.v1.1"
+          ],
+          "ms": 8.352,
+          "timings_ms": {
+            "retrieval": 3.038,
+            "authorization": 2.692,
+            "generation": 0.008,
+            "final_check": 2.614
+          }
+        },
+        {
+          "id": "H09",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "借走的书过多少日子要送回来？",
+          "expected": "PUB-009 / 二十一天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 7.922,
+          "timings_ms": {
+            "retrieval": 2.435,
+            "authorization": 2.058,
+            "generation": 0.001,
+            "final_check": 3.428
+          }
+        },
+        {
+          "id": "H10",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "Where is the electric submarine dock?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 6.5,
+          "timings_ms": {
+            "retrieval": 2.519,
+            "authorization": 1.644,
+            "generation": 0.001,
+            "final_check": 2.336
+          }
+        },
+        {
+          "id": "H11",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where do I report a missing entrance card?",
+          "expected": "PUB-008 / Birch Desk",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 9.625,
+          "timings_ms": {
+            "retrieval": 3.837,
+            "authorization": 2.657,
+            "generation": 0.001,
+            "final_check": 3.13
+          }
+        },
+        {
+          "id": "H12",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "年度安全培训哪个月完成？",
+          "expected": "PUB-007 / 四月",
+          "actual": "安全培训 / Security training\n年度安全培训的完成月份是四月。\nComplete annual security training in April.",
+          "passed": true,
+          "refs": [
+            "PUB-007"
+          ],
+          "context": [
+            "PUB-007.v1.1"
+          ],
+          "ms": 8.316,
+          "timings_ms": {
+            "retrieval": 2.483,
+            "authorization": 2.727,
+            "generation": 0.008,
+            "final_check": 3.098
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['df7aad6aa11b4b1a8e18a40d639ac380']",
+          "passed": true
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "mode": "C",
+      "security": {
+        "n": 13,
+        "d": 13
+      },
+      "quality": {
+        "n": 10,
+        "d": 12
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 7,
+          "d": 9
+        },
+        "answer_with_reference_fact": {
+          "n": 7,
+          "d": 9
+        },
+        "reference_correct_and_allowed": {
+          "n": 7,
+          "d": 7
+        },
+        "abstention": {
+          "n": 3,
+          "d": 3
+        },
+        "zh": {
+          "n": 5,
+          "d": 6
+        },
+        "en": {
+          "n": 5,
+          "d": 6
+        }
+      },
+      "latency_ms": {
+        "p50": 8.434,
+        "p95": 10.849
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.818,
+          "p95": 3.71
+        },
+        "authorization": {
+          "p50": 2.232,
+          "p95": 2.808
+        },
+        "generation": {
+          "p50": 0.007,
+          "p95": 0.012
+        },
+        "final_check": {
+          "p50": 2.902,
+          "p95": 4.592
+        }
+      },
+      "cases": [
+        {
+          "id": "H01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "消防演练时到哪里集合？",
+          "expected": "PUB-010 / 北侧草坪",
+          "actual": "消防集合 / Fire assembly\n消防演练集合地点为北侧草坪。\nThe fire assembly point is the north lawn.",
+          "passed": true,
+          "refs": [
+            "PUB-010"
+          ],
+          "context": [
+            "PUB-010.v1.1"
+          ],
+          "ms": 8.711,
+          "timings_ms": {
+            "retrieval": 3.71,
+            "authorization": 2.25,
+            "generation": 0.008,
+            "final_check": 2.742
+          }
+        },
+        {
+          "id": "H02",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "How long are library loans?",
+          "expected": "PUB-009 / twenty-one days",
+          "actual": "图书借阅 / Library loans\n图书借阅期限为二十一天。\nLibrary loans last twenty-one days.",
+          "passed": true,
+          "refs": [
+            "PUB-009"
+          ],
+          "context": [
+            "PUB-009.v1.1"
+          ],
+          "ms": 10.849,
+          "timings_ms": {
+            "retrieval": 3.437,
+            "authorization": 2.808,
+            "generation": 0.012,
+            "final_check": 4.592
+          }
+        },
+        {
+          "id": "H03",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "绩效复议窗口有几天？",
+          "expected": "HR-008 / 八个工作日",
+          "actual": "绩效复议 / Performance appeal\n绩效复议窗口为八个工作日。\nThe appeal window is eight working days.",
+          "passed": true,
+          "refs": [
+            "HR-008"
+          ],
+          "context": [
+            "HR-008.v1.1"
+          ],
+          "ms": 8.614,
+          "timings_ms": {
+            "retrieval": 2.491,
+            "authorization": 2.441,
+            "generation": 0.012,
+            "final_check": 3.67
+          }
+        },
+        {
+          "id": "H04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "How many snapshots are retained for pipeline rollback?",
+          "expected": "RD-002 / seven snapshots",
+          "actual": "流水线回滚 / Pipeline rollback\n流水线回滚保留七个快照。\nRollback retains seven snapshots.",
+          "passed": true,
+          "refs": [
+            "RD-002"
+          ],
+          "context": [
+            "RD-002.v1.1"
+          ],
+          "ms": 7.079,
+          "timings_ms": {
+            "retrieval": 2.665,
+            "authorization": 1.915,
+            "generation": 0.007,
+            "final_check": 2.491
+          }
+        },
+        {
+          "id": "H05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 10.06,
+          "timings_ms": {
+            "retrieval": 3.527,
+            "authorization": 1.996,
+            "generation": 0.001,
+            "final_check": 4.537
+          }
+        },
+        {
+          "id": "H06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "数据校准采用几轮采样？",
+          "expected": "RD-015 / 十三轮",
+          "actual": "数据校准 / Sensor calibration\n数据校准采用十三轮采样。\nCalibrate with thirteen sampling rounds.",
+          "passed": true,
+          "refs": [
+            "RD-015"
+          ],
+          "context": [
+            "RD-015.v1.1"
+          ],
+          "ms": 8.554,
+          "timings_ms": {
+            "retrieval": 3.493,
+            "authorization": 2.482,
+            "generation": 0.008,
+            "final_check": 2.571
+          }
+        },
+        {
+          "id": "H07",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.377,
+          "timings_ms": {
+            "retrieval": 2.323,
+            "authorization": 1.913,
+            "generation": 0.001,
+            "final_check": 3.14
+          }
+        },
+        {
+          "id": "H08",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the bonus archive batch?",
+          "expected": "HR-014 / BONUS-38",
+          "actual": "奖金封存 / Bonus archive\n奖金封存批次号为 BONUS-38。\nThe archive batch is BONUS-38.",
+          "passed": true,
+          "refs": [
+            "HR-014"
+          ],
+          "context": [
+            "HR-014.v1.1"
+          ],
+          "ms": 7.379,
+          "timings_ms": {
+            "retrieval": 2.414,
+            "authorization": 2.215,
+            "generation": 0.009,
+            "final_check": 2.741
+          }
+        },
+        {
+          "id": "H09",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "借走的书过多少日子要送回来？",
+          "expected": "PUB-009 / 二十一天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 6.511,
+          "timings_ms": {
+            "retrieval": 2.482,
+            "authorization": 1.618,
+            "generation": 0.001,
+            "final_check": 2.41
+          }
+        },
+        {
+          "id": "H10",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "Where is the electric submarine dock?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 8.315,
+          "timings_ms": {
+            "retrieval": 2.971,
+            "authorization": 2.279,
+            "generation": 0.001,
+            "final_check": 3.063
+          }
+        },
+        {
+          "id": "H11",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where do I report a missing entrance card?",
+          "expected": "PUB-008 / Birch Desk",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 8.893,
+          "timings_ms": {
+            "retrieval": 3.357,
+            "authorization": 2.449,
+            "generation": 0.001,
+            "final_check": 3.087
+          }
+        },
+        {
+          "id": "H12",
+          "suite": "quality",
+          "user": "admin",
+          "initial": "seed manifest",
+          "question": "年度安全培训哪个月完成？",
+          "expected": "PUB-007 / 四月",
+          "actual": "安全培训 / Security training\n年度安全培训的完成月份是四月。\nComplete annual security training in April.",
+          "passed": true,
+          "refs": [
+            "PUB-007"
+          ],
+          "context": [
+            "PUB-007.v1.1"
+          ],
+          "ms": 6.924,
+          "timings_ms": {
+            "retrieval": 2.478,
+            "authorization": 1.788,
+            "generation": 0.006,
+            "final_check": 2.652
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [],
+          "cached": true
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['de6ac47e8335481c838ffc111e435734']",
+          "passed": true
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

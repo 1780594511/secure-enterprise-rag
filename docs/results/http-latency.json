@@ -1,0 +1,117 @@
+{
+  "scope": "warm HTTP connection, 10 sequential requests, includes response body transfer, excludes UI and login",
+  "p50_ms": 11.582,
+  "p95_ms": 14.791,
+  "samples": [
+    {
+      "question": "设备报修工单分配给哪里？",
+      "cached": false,
+      "http_ms": 14.791,
+      "stages_ms": {
+        "retrieval": 4.523,
+        "authorization": 1.542,
+        "generation": 0.003,
+        "final_check": 2.477
+      }
+    },
+    {
+      "question": "会议室预约最多提前几天？",
+      "cached": false,
+      "http_ms": 11.854,
+      "stages_ms": {
+        "retrieval": 2.187,
+        "authorization": 1.535,
+        "generation": 0.003,
+        "final_check": 2.677
+      }
+    },
+    {
+      "question": "年度安全培训何时完成？",
+      "cached": false,
+      "http_ms": 12.267,
+      "stages_ms": {
+        "retrieval": 2.177,
+        "authorization": 1.56,
+        "generation": 0.002,
+        "final_check": 2.227
+      }
+    },
+    {
+      "question": "园区班车在哪里发车？",
+      "cached": false,
+      "http_ms": 11.747,
+      "stages_ms": {
+        "retrieval": 2.176,
+        "authorization": 1.766,
+        "generation": 0.003,
+        "final_check": 2.333
+      }
+    },
+    {
+      "question": "图书借阅期限是多久？",
+      "cached": false,
+      "http_ms": 11.809,
+      "stages_ms": {
+        "retrieval": 2.293,
+        "authorization": 1.481,
+        "generation": 0.002,
+        "final_check": 2.123
+      }
+    },
+    {
+      "question": "设备报修工单分配给哪里？",
+      "cached": true,
+      "http_ms": 11.418,
+      "stages_ms": {
+        "retrieval": 2.01,
+        "authorization": 1.655,
+        "generation": 0.001,
+        "final_check": 2.334
+      }
+    },
+    {
+      "question": "会议室预约最多提前几天？",
+      "cached": true,
+      "http_ms": 10.882,
+      "stages_ms": {
+        "retrieval": 1.941,
+        "authorization": 1.515,
+        "generation": 0.001,
+        "final_check": 2.191
+      }
+    },
+    {
+      "question": "年度安全培训何时完成？",
+      "cached": true,
+      "http_ms": 11.298,
+      "stages_ms": {
+        "retrieval": 1.657,
+        "authorization": 1.647,
+        "generation": 0.001,
+        "final_check": 2.337
+      }
+    },
+    {
+      "question": "园区班车在哪里发车？",
+      "cached": true,
+      "http_ms": 11.3,
+      "stages_ms": {
+        "retrieval": 1.82,
+        "authorization": 1.635,
+        "generation": 0.001,
+        "final_check": 2.3
+      }
+    },
+    {
+      "question": "图书借阅期限是多久？",
+      "cached": true,
+      "http_ms": 11.345,
+      "stages_ms": {
+        "retrieval": 1.844,
+        "authorization": 1.539,
+        "generation": 0.001,
+        "final_check": 2.108
+      }
+    }
+  ]
+}

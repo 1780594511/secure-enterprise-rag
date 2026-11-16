@@ -1,0 +1,1371 @@
+{
+  "split": "dev",
+  "generated_at": "2026-11-15T19:07:17.956427+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "sqlite": "3.53.1",
+  "fixture_sha256": "fde2568476adc524ef74f35850c6e12dd0ffbf239e460542099ce73acbded47f",
+  "corpus_source_sha256": "c2dad5c73b83263e4082c5683d1002f112302a9b426840bc93c71e2066fc7d5b",
+  "config": {
+    "generator": "extractive-mock-v1",
+    "embedding": "lexical-hash-65536-v1",
+    "threshold": 0.18,
+    "top_k": 1,
+    "chunk": 420,
+    "overlap": 60
+  },
+  "variants": [
+    {
+      "mode": "A",
+      "security": {
+        "n": 7,
+        "d": 13
+      },
+      "quality": {
+        "n": 6,
+        "d": 10
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 5,
+          "d": 7
+        },
+        "answer_with_reference_fact": {
+          "n": 5,
+          "d": 7
+        },
+        "reference_correct_and_allowed": {
+          "n": 5,
+          "d": 7
+        },
+        "abstention": {
+          "n": 1,
+          "d": 3
+        },
+        "zh": {
+          "n": 3,
+          "d": 5
+        },
+        "en": {
+          "n": 3,
+          "d": 5
+        }
+      },
+      "latency_ms": {
+        "p50": 8.264,
+        "p95": 9.421
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.617,
+          "p95": 3.389
+        },
+        "authorization": {
+          "p50": 1.734,
+          "p95": 2.135
+        },
+        "generation": {
+          "p50": 0.007,
+          "p95": 0.008
+        },
+        "final_check": {
+          "p50": 3.808,
+          "p95": 4.668
+        }
+      },
+      "cases": [
+        {
+          "id": "D01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "访客登记点在哪里？",
+          "expected": "PUB-001 / 青禾前台",
+          "actual": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+          "passed": true,
+          "refs": [
+            "PUB-001"
+          ],
+          "context": [
+            "PUB-001.v1.1"
+          ],
+          "ms": 9.421,
+          "timings_ms": {
+            "retrieval": 3.389,
+            "authorization": 1.724,
+            "generation": 0.008,
+            "final_check": 4.3
+          }
+        },
+        {
+          "id": "D02",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "HR-001 / HR-ORCHID-72",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "ms": 8.336,
+          "timings_ms": {
+            "retrieval": 2.569,
+            "authorization": 1.612,
+            "generation": 0.008,
+            "final_check": 4.146
+          }
+        },
+        {
+          "id": "D03",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": false,
+          "refs": [
+            "HR-001"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "ms": 9.078,
+          "timings_ms": {
+            "retrieval": 2.736,
+            "authorization": 1.743,
+            "generation": 0.007,
+            "final_check": 4.593
+          }
+        },
+        {
+          "id": "D04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "What is the build signing code?",
+          "expected": "RD-003 / FIR-06",
+          "actual": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+          "passed": true,
+          "refs": [
+            "RD-003"
+          ],
+          "context": [
+            "RD-003.v1.1"
+          ],
+          "ms": 8.193,
+          "timings_ms": {
+            "retrieval": 2.579,
+            "authorization": 2.135,
+            "generation": 0.007,
+            "final_check": 3.471
+          }
+        },
+        {
+          "id": "D05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "What is the blueprint archive box?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": false,
+          "refs": [
+            "RD-013"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "ms": 7.298,
+          "timings_ms": {
+            "retrieval": 2.555,
+            "authorization": 1.702,
+            "generation": 0.006,
+            "final_check": 3.035
+          }
+        },
+        {
+          "id": "D06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "蓝图归档的盒号是什么？",
+          "expected": "RD-013 / QUARTZ-39",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": true,
+          "refs": [
+            "RD-013"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "ms": 8.977,
+          "timings_ms": {
+            "retrieval": 2.809,
+            "authorization": 1.856,
+            "generation": 0.006,
+            "final_check": 4.306
+          }
+        },
+        {
+          "id": "D07",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where does the shuttle leave?",
+          "expected": "PUB-013 / south gate",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 8.921,
+          "timings_ms": {
+            "retrieval": 2.566,
+            "authorization": 1.686,
+            "generation": 0.001,
+            "final_check": 4.668
+          }
+        },
+        {
+          "id": "D08",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "去外地办事回来最晚多久能申请还款？",
+          "expected": "PUB-003 / 十二天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 6.915,
+          "timings_ms": {
+            "retrieval": 2.751,
+            "authorization": 1.487,
+            "generation": 0.001,
+            "final_check": 2.676
+          }
+        },
+        {
+          "id": "D09",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the lunar cafeteria recipe?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.777,
+          "timings_ms": {
+            "retrieval": 2.655,
+            "authorization": 1.938,
+            "generation": 0.001,
+            "final_check": 3.184
+          }
+        },
+        {
+          "id": "D10",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the mentor allowance?",
+          "expected": "HR-003 / 340 credits",
+          "actual": "导师津贴 / Mentor allowance\n导师津贴每期三百四十星币。\nMentor allowance is 340 credits per cycle.",
+          "passed": true,
+          "refs": [
+            "HR-003"
+          ],
+          "context": [
+            "HR-003.v1.1"
+          ],
+          "ms": 7.369,
+          "timings_ms": {
+            "retrieval": 2.508,
+            "authorization": 1.788,
+            "generation": 0.008,
+            "final_check": 3.064
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": false,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": false,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": false,
+          "refs": [
+            "RD-013.v1.1"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": false,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": false
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['dbb6274e4b4a4f96998a711b7abf1d92']",
+          "passed": false
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "mode": "B",
+      "security": {
+        "n": 13,
+        "d": 13
+      },
+      "quality": {
+        "n": 8,
+        "d": 10
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 5,
+          "d": 7
+        },
+        "answer_with_reference_fact": {
+          "n": 5,
+          "d": 7
+        },
+        "reference_correct_and_allowed": {
+          "n": 5,
+          "d": 5
+        },
+        "abstention": {
+          "n": 3,
+          "d": 3
+        },
+        "zh": {
+          "n": 4,
+          "d": 5
+        },
+        "en": {
+          "n": 4,
+          "d": 5
+        }
+      },
+      "latency_ms": {
+        "p50": 7.133,
+        "p95": 9.523
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.599,
+          "p95": 3.104
+        },
+        "authorization": {
+          "p50": 1.833,
+          "p95": 2.225
+        },
+        "generation": {
+          "p50": 0.004,
+          "p95": 0.007
+        },
+        "final_check": {
+          "p50": 2.705,
+          "p95": 4.428
+        }
+      },
+      "cases": [
+        {
+          "id": "D01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "访客登记点在哪里？",
+          "expected": "PUB-001 / 青禾前台",
+          "actual": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+          "passed": true,
+          "refs": [
+            "PUB-001"
+          ],
+          "context": [
+            "PUB-001.v1.1"
+          ],
+          "ms": 7.088,
+          "timings_ms": {
+            "retrieval": 2.465,
+            "authorization": 2.04,
+            "generation": 0.006,
+            "final_check": 2.577
+          }
+        },
+        {
+          "id": "D02",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "HR-001 / HR-ORCHID-72",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "ms": 6.946,
+          "timings_ms": {
+            "retrieval": 2.592,
+            "authorization": 1.779,
+            "generation": 0.007,
+            "final_check": 2.569
+          }
+        },
+        {
+          "id": "D03",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.253,
+          "timings_ms": {
+            "retrieval": 2.907,
+            "authorization": 1.859,
+            "generation": 0.001,
+            "final_check": 2.487
+          }
+        },
+        {
+          "id": "D04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "What is the build signing code?",
+          "expected": "RD-003 / FIR-06",
+          "actual": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+          "passed": true,
+          "refs": [
+            "RD-003"
+          ],
+          "context": [
+            "RD-003.v1.1"
+          ],
+          "ms": 6.734,
+          "timings_ms": {
+            "retrieval": 2.393,
+            "authorization": 1.688,
+            "generation": 0.007,
+            "final_check": 2.646
+          }
+        },
+        {
+          "id": "D05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "What is the blueprint archive box?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.959,
+          "timings_ms": {
+            "retrieval": 2.894,
+            "authorization": 2.225,
+            "generation": 0.001,
+            "final_check": 2.839
+          }
+        },
+        {
+          "id": "D06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "蓝图归档的盒号是什么？",
+          "expected": "RD-013 / QUARTZ-39",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": true,
+          "refs": [
+            "RD-013"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "ms": 9.523,
+          "timings_ms": {
+            "retrieval": 3.104,
+            "authorization": 1.984,
+            "generation": 0.007,
+            "final_check": 4.428
+          }
+        },
+        {
+          "id": "D07",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where does the shuttle leave?",
+          "expected": "PUB-013 / south gate",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 7.178,
+          "timings_ms": {
+            "retrieval": 2.605,
+            "authorization": 1.807,
+            "generation": 0.001,
+            "final_check": 2.765
+          }
+        },
+        {
+          "id": "D08",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "去外地办事回来最晚多久能申请还款？",
+          "expected": "PUB-003 / 十二天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 7.035,
+          "timings_ms": {
+            "retrieval": 2.497,
+            "authorization": 1.498,
+            "generation": 0.001,
+            "final_check": 3.039
+          }
+        },
+        {
+          "id": "D09",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the lunar cafeteria recipe?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.755,
+          "timings_ms": {
+            "retrieval": 3.07,
+            "authorization": 2.186,
+            "generation": 0.001,
+            "final_check": 2.498
+          }
+        },
+        {
+          "id": "D10",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the mentor allowance?",
+          "expected": "HR-003 / 340 credits",
+          "actual": "导师津贴 / Mentor allowance\n导师津贴每期三百四十星币。\nMentor allowance is 340 credits per cycle.",
+          "passed": true,
+          "refs": [
+            "HR-003"
+          ],
+          "context": [
+            "HR-003.v1.1"
+          ],
+          "ms": 7.023,
+          "timings_ms": {
+            "retrieval": 2.231,
+            "authorization": 1.75,
+            "generation": 0.007,
+            "final_check": 3.035
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['c8386b099607432a9013469c364c9ab9']",
+          "passed": true
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "mode": "C",
+      "security": {
+        "n": 13,
+        "d": 13
+      },
+      "quality": {
+        "n": 8,
+        "d": 10
+      },
+      "metrics": {
+        "hit_at_1": {
+          "n": 5,
+          "d": 7
+        },
+        "answer_with_reference_fact": {
+          "n": 5,
+          "d": 7
+        },
+        "reference_correct_and_allowed": {
+          "n": 5,
+          "d": 5
+        },
+        "abstention": {
+          "n": 3,
+          "d": 3
+        },
+        "zh": {
+          "n": 4,
+          "d": 5
+        },
+        "en": {
+          "n": 4,
+          "d": 5
+        }
+      },
+      "latency_ms": {
+        "p50": 7.183,
+        "p95": 8.441
+      },
+      "stage_ms": {
+        "retrieval": {
+          "p50": 2.438,
+          "p95": 2.997
+        },
+        "authorization": {
+          "p50": 1.851,
+          "p95": 2.539
+        },
+        "generation": {
+          "p50": 0.004,
+          "p95": 0.008
+        },
+        "final_check": {
+          "p50": 2.705,
+          "p95": 3.509
+        }
+      },
+      "cases": [
+        {
+          "id": "D01",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "访客登记点在哪里？",
+          "expected": "PUB-001 / 青禾前台",
+          "actual": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+          "passed": true,
+          "refs": [
+            "PUB-001"
+          ],
+          "context": [
+            "PUB-001.v1.1"
+          ],
+          "ms": 7.588,
+          "timings_ms": {
+            "retrieval": 2.301,
+            "authorization": 2.532,
+            "generation": 0.007,
+            "final_check": 2.748
+          }
+        },
+        {
+          "id": "D02",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "HR-001 / HR-ORCHID-72",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001"
+          ],
+          "context": [
+            "HR-001.v1.1"
+          ],
+          "ms": 6.363,
+          "timings_ms": {
+            "retrieval": 2.245,
+            "authorization": 1.681,
+            "generation": 0.006,
+            "final_check": 2.431
+          }
+        },
+        {
+          "id": "D03",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "薪酬复核的内部校验码是什么？",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 7.013,
+          "timings_ms": {
+            "retrieval": 2.997,
+            "authorization": 1.657,
+            "generation": 0.001,
+            "final_check": 2.358
+          }
+        },
+        {
+          "id": "D04",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "What is the build signing code?",
+          "expected": "RD-003 / FIR-06",
+          "actual": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+          "passed": true,
+          "refs": [
+            "RD-003"
+          ],
+          "context": [
+            "RD-003.v1.1"
+          ],
+          "ms": 8.441,
+          "timings_ms": {
+            "retrieval": 2.8,
+            "authorization": 2.539,
+            "generation": 0.008,
+            "final_check": 3.095
+          }
+        },
+        {
+          "id": "D05",
+          "suite": "quality",
+          "user": "peer",
+          "initial": "seed manifest",
+          "question": "What is the blueprint archive box?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 6.816,
+          "timings_ms": {
+            "retrieval": 2.383,
+            "authorization": 1.771,
+            "generation": 0.001,
+            "final_check": 2.661
+          }
+        },
+        {
+          "id": "D06",
+          "suite": "quality",
+          "user": "engineer",
+          "initial": "seed manifest",
+          "question": "蓝图归档的盒号是什么？",
+          "expected": "RD-013 / QUARTZ-39",
+          "actual": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+          "passed": true,
+          "refs": [
+            "RD-013"
+          ],
+          "context": [
+            "RD-013.v1.1"
+          ],
+          "ms": 6.762,
+          "timings_ms": {
+            "retrieval": 2.466,
+            "authorization": 1.941,
+            "generation": 0.006,
+            "final_check": 2.349
+          }
+        },
+        {
+          "id": "D07",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "Where does the shuttle leave?",
+          "expected": "PUB-013 / south gate",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 7.954,
+          "timings_ms": {
+            "retrieval": 2.851,
+            "authorization": 1.931,
+            "generation": 0.001,
+            "final_check": 3.171
+          }
+        },
+        {
+          "id": "D08",
+          "suite": "quality",
+          "user": "employee",
+          "initial": "seed manifest",
+          "question": "去外地办事回来最晚多久能申请还款？",
+          "expected": "PUB-003 / 十二天",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": false,
+          "refs": [],
+          "context": [],
+          "ms": 7.61,
+          "timings_ms": {
+            "retrieval": 2.414,
+            "authorization": 1.686,
+            "generation": 0.001,
+            "final_check": 3.509
+          }
+        },
+        {
+          "id": "D09",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the lunar cafeteria recipe?",
+          "expected": "当前可访问的资料不足，无法回答这个问题。",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "ms": 6.425,
+          "timings_ms": {
+            "retrieval": 2.461,
+            "authorization": 1.643,
+            "generation": 0.001,
+            "final_check": 2.32
+          }
+        },
+        {
+          "id": "D10",
+          "suite": "quality",
+          "user": "hr",
+          "initial": "seed manifest",
+          "question": "What is the mentor allowance?",
+          "expected": "HR-003 / 340 credits",
+          "actual": "导师津贴 / Mentor allowance\n导师津贴每期三百四十星币。\nMentor allowance is 340 credits per cycle.",
+          "passed": true,
+          "refs": [
+            "HR-003"
+          ],
+          "context": [
+            "HR-003.v1.1"
+          ],
+          "ms": 7.352,
+          "timings_ms": {
+            "retrieval": 2.353,
+            "authorization": 2.002,
+            "generation": 0.006,
+            "final_check": 2.991
+          }
+        },
+        {
+          "id": "S01",
+          "suite": "security",
+          "user": "hr",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "人事部授权",
+          "expected": "命中授权来源",
+          "actual": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+          "passed": true,
+          "refs": [
+            "HR-001.v1.1"
+          ],
+          "context": [],
+          "cached": true
+        },
+        {
+          "id": "S02",
+          "suite": "security",
+          "user": "employee",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "相同问题已由 HR 查询",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": true
+        },
+        {
+          "id": "S03",
+          "suite": "security",
+          "user": "admin",
+          "question": "薪酬复核的内部校验码是什么？",
+          "initial": "仅管理权限",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S04",
+          "suite": "security",
+          "user": "peer",
+          "question": "蓝图归档的盒号是什么？",
+          "initial": "同部门另一用户获授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S05",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "个人授权",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [
+            "RD-001.v1.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S06",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "相同用户重复查询",
+          "expected": "命中授权来源",
+          "actual": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+          "passed": true,
+          "refs": [
+            "RD-001.v1.1"
+          ],
+          "context": [],
+          "cached": true
+        },
+        {
+          "id": "S07",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "已撤销上轮授权",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S08",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "撤权后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S09",
+          "suite": "security",
+          "user": "engineer",
+          "question": "GET history",
+          "initial": "撤权后再查询",
+          "expected": "历史无旧正文",
+          "actual": "['63d157c07a9a48b2aa464f1b81393cfc']",
+          "passed": true
+        },
+        {
+          "id": "S10",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "同一文档已更新到 v2",
+          "expected": "命中授权来源",
+          "actual": "星桥发布的验收口令是 RD-NEW-52。",
+          "passed": true,
+          "refs": [
+            "RD-001.v2.1"
+          ],
+          "context": [
+            "RD-001.v2.1"
+          ],
+          "cached": false
+        },
+        {
+          "id": "S11",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v1.1",
+          "initial": "旧版本已失效",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        },
+        {
+          "id": "S12",
+          "suite": "security",
+          "user": "engineer",
+          "question": "星桥发布的验收口令是什么？",
+          "initial": "文档已删除",
+          "expected": "正文、引用、模型上下文均无目标资料",
+          "actual": "当前可访问的资料不足，无法回答这个问题。",
+          "passed": true,
+          "refs": [],
+          "context": [],
+          "cached": false
+        },
+        {
+          "id": "S13",
+          "suite": "security",
+          "user": "engineer",
+          "question": "RD-001.v2.1",
+          "initial": "删除后的原链接",
+          "expected": "404",
+          "actual": "404",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

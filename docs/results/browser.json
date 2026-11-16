@@ -1,0 +1,33 @@
+{
+  "playwright": "1.65.0",
+  "stats": {
+    "startTime": "2026-11-15T19:17:13.552Z",
+    "duration": 27835.391,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "case": "employee and HR see different evidence; mobile layout and versioned source",
+      "status": "passed",
+      "ms": 2084
+    },
+    {
+      "case": "grant, warm cache, revoke, stale source and history, version update and delete",
+      "status": "passed",
+      "ms": 15549
+    },
+    {
+      "case": "admin imports hostile HTML; document, answer and history render as text",
+      "status": "passed",
+      "ms": 1410
+    },
+    {
+      "case": "evaluation runs and exposes actual failed cases",
+      "status": "passed",
+      "ms": 4636
+    }
+  ]
+}
