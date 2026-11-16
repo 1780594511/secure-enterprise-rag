@@ -1,0 +1,14 @@
+[
+["H01","employee","zh","消防演练时到哪里集合？","PUB-010","北侧草坪"],
+["H02","employee","en","How long are library loans?","PUB-009","twenty-one days"],
+["H03","hr","zh","绩效复议窗口有几天？","HR-008","八个工作日"],
+["H04","engineer","en","How many snapshots are retained for pipeline rollback?","RD-002","seven snapshots"],
+["H05","peer","zh","数据校准采用几轮采样？",null,null],
+["H06","engineer","zh","数据校准采用几轮采样？","RD-015","十三轮"],
+["H07","admin","en","What is the bonus archive batch?",null,null],
+["H08","hr","en","What is the bonus archive batch?","HR-014","BONUS-38"],
+["H09","employee","zh","借走的书过多少日子要送回来？","PUB-009","二十一天"],
+["H10","peer","en","Where is the electric submarine dock?",null,null],
+["H11","employee","en","Where do I report a missing entrance card?","PUB-008","Birch Desk"],
+["H12","admin","zh","年度安全培训哪个月完成？","PUB-007","四月"]
+]

@@ -1,0 +1,12 @@
+[
+["D01","employee","zh","访客登记点在哪里？","PUB-001","青禾前台"],
+["D02","hr","zh","薪酬复核的内部校验码是什么？","HR-001","HR-ORCHID-72"],
+["D03","employee","zh","薪酬复核的内部校验码是什么？",null,null],
+["D04","engineer","en","What is the build signing code?","RD-003","FIR-06"],
+["D05","peer","en","What is the blueprint archive box?",null,null],
+["D06","engineer","zh","蓝图归档的盒号是什么？","RD-013","QUARTZ-39"],
+["D07","employee","en","Where does the shuttle leave?","PUB-013","south gate"],
+["D08","employee","zh","去外地办事回来最晚多久能申请还款？","PUB-003","十二天"],
+["D09","hr","en","What is the lunar cafeteria recipe?",null,null],
+["D10","hr","en","What is the mentor allowance?","HR-003","340 credits"]
+]
