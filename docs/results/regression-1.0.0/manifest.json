@@ -1,0 +1,332 @@
+{
+  "dataset": "1.0.0",
+  "scorer": "extractive-acl-v1",
+  "files_sha256": {
+    "rag/__init__.py": "65af5fc72b8b138b8de4fb6cff75284043da34d349f8e5de60a3dfdfd89d2b01",
+    "rag/adapters.py": "44eee5c03c82e9140d3c65ff52b95d2516bb59a1dc3b803b3273f145e32057fd",
+    "rag/api.py": "7e5c7daa0514ff0699cedb3aeff4f2290eebdafbb83cc5e79b13dbe1d2a89cef",
+    "rag/corpus.py": "c2dad5c73b83263e4082c5683d1002f112302a9b426840bc93c71e2066fc7d5b",
+    "rag/ingest.py": "20958fa69328ff451551447b02c81b66db0e1b45bf1159dc7a954e81cd624cfd",
+    "rag/main.py": "6ba990daae938e590f91eca13b4bbc18a2b4ba2794c150582928080b73bea46a",
+    "rag/service.py": "931fd9095d1ec45d7b89e76ca47b2bca25a172eae78ea6ace4c135b165cced11",
+    "rag/store.py": "d9a0d81e988e2fe9be417754ff80c64d29a6e999712eb14b3c0bc0da200344d6",
+    "rag/schema.sql": "bf772878cf9c859f780053b066a2af32b224ac5bc83677ef80301d64b932d445",
+    "requirements.lock": "355e0f681cacccdd509f7adaa56238b280909639b2f497a39a21176c97bae7b0",
+    "evaluations/regression.py": "6be01716266cd4d4286e8d8f5e7a426ea02b20d07e3f33e524c76fd8d4584829",
+    "evaluations/regression_report.py": "140a2819ed2e24f054af8a16916c18f0ba4a3816388c3c17d7212547813d2e49",
+    "evaluations/run.py": "45fa64586bb042f79ef348598a629fb1e416b6e08b6ac5529b3e57670182488e",
+    "evaluations/regression-v1.json": "259967d9a745556254bcc3647f3b115b50758b4472d5fdd81412b215088549db"
+  },
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "docs": 50,
+  "accounts": 5,
+  "embedding": "lexical-hash-65536-v1",
+  "generator": "extractive-mock-v1",
+  "chunk_chars": 420,
+  "overlap_chars": 60,
+  "cache": true,
+  "ranking_depth": 5,
+  "generation_depth": 1,
+  "thresholds": {
+    "baseline": 0.18,
+    "candidate": 0.12
+  },
+  "expectations": {
+    "answer": "有权读取，前五名含目标文档，回答包含参考事实并引用目标。",
+    "deny": "目标未授权，各阶段只能使用当前有权查看的材料，回答不能出现目标事实。",
+    "revoke": "独占授予指定用户 → 同题冷查及命中缓存 → 清空该文档授权 → 同题重查，旧引用 404，历史与输出无撤权内容。",
+    "unknown": "语料没有所问事实，应返回资料不足且无引用。"
+  },
+  "cases": [
+    {
+      "id": "Q01",
+      "scenario": "answer",
+      "user": "employee",
+      "question": "访客登记点在哪里？",
+      "doc": "PUB-001",
+      "fact": "青禾前台"
+    },
+    {
+      "id": "Q02",
+      "scenario": "answer",
+      "user": "hr",
+      "question": "薪酬复核的内部校验码是什么？",
+      "doc": "HR-001",
+      "fact": "HR-ORCHID-72"
+    },
+    {
+      "id": "Q03",
+      "scenario": "answer",
+      "user": "engineer",
+      "question": "What is the build signing code?",
+      "doc": "RD-003",
+      "fact": "FIR-06"
+    },
+    {
+      "id": "Q04",
+      "scenario": "answer",
+      "user": "engineer",
+      "question": "蓝图归档的盒号是什么？",
+      "doc": "RD-013",
+      "fact": "QUARTZ-39"
+    },
+    {
+      "id": "Q05",
+      "scenario": "answer",
+      "user": "employee",
+      "question": "Where does the shuttle leave?",
+      "doc": "PUB-013",
+      "fact": "south gate"
+    },
+    {
+      "id": "Q06",
+      "scenario": "answer",
+      "user": "employee",
+      "question": "去外地办事回来最晚多久能申请还款？",
+      "doc": "PUB-003",
+      "fact": "十二天"
+    },
+    {
+      "id": "Q07",
+      "scenario": "answer",
+      "user": "hr",
+      "question": "What is the mentor allowance?",
+      "doc": "HR-003",
+      "fact": "340 credits"
+    },
+    {
+      "id": "Q08",
+      "scenario": "answer",
+      "user": "admin",
+      "question": "网络报障分机是多少？",
+      "doc": "PUB-016",
+      "fact": "六零三"
+    },
+    {
+      "id": "Q09",
+      "scenario": "answer",
+      "user": "peer",
+      "question": "流量回放窗口多长？",
+      "doc": "RD-004",
+      "fact": "十五分钟"
+    },
+    {
+      "id": "Q10",
+      "scenario": "answer",
+      "user": "hr",
+      "question": "Which group holds the raise roster?",
+      "doc": "HR-016",
+      "fact": "Lily Desk"
+    },
+    {
+      "id": "Q11",
+      "scenario": "answer",
+      "user": "employee",
+      "question": "设备报修工单怎么分配？",
+      "doc": "PUB-004",
+      "fact": "松针服务台"
+    },
+    {
+      "id": "Q12",
+      "scenario": "answer",
+      "user": "peer",
+      "question": "What is the lab key rotation period?",
+      "doc": "RD-010",
+      "fact": "thirty-one days"
+    },
+    {
+      "id": "Q13",
+      "scenario": "answer",
+      "user": "employee",
+      "question": "Where do staff drop off batteries for recycling?",
+      "doc": "PUB-014",
+      "fact": "first floor"
+    },
+    {
+      "id": "Q14",
+      "scenario": "answer",
+      "user": "admin",
+      "question": "How early can I book a meeting room?",
+      "doc": "PUB-006",
+      "fact": "nine days"
+    },
+    {
+      "id": "Q15",
+      "scenario": "answer",
+      "user": "hr",
+      "question": "调岗审批由谁复核？",
+      "doc": "HR-004",
+      "fact": "杜鹃小组"
+    },
+    {
+      "id": "Q16",
+      "scenario": "answer",
+      "user": "engineer",
+      "question": "What is the fault drill site code?",
+      "doc": "RD-011",
+      "fact": "MARSH-17"
+    },
+    {
+      "id": "D01",
+      "scenario": "deny",
+      "user": "employee",
+      "question": "薪酬复核的内部校验码是什么？",
+      "doc": "HR-001",
+      "fact": "HR-ORCHID-72"
+    },
+    {
+      "id": "D02",
+      "scenario": "deny",
+      "user": "admin",
+      "question": "薪酬复核的内部校验码是什么？",
+      "doc": "HR-001",
+      "fact": "HR-ORCHID-72"
+    },
+    {
+      "id": "D03",
+      "scenario": "deny",
+      "user": "peer",
+      "question": "What is the blueprint archive box?",
+      "doc": "RD-013",
+      "fact": "QUARTZ-39"
+    },
+    {
+      "id": "D04",
+      "scenario": "deny",
+      "user": "hr",
+      "question": "构建签名使用什么代号？",
+      "doc": "RD-003",
+      "fact": "FIR-06"
+    },
+    {
+      "id": "D05",
+      "scenario": "deny",
+      "user": "engineer",
+      "question": "人才盘点的模板编号是什么？",
+      "doc": "HR-007",
+      "fact": "TAL-19"
+    },
+    {
+      "id": "D06",
+      "scenario": "deny",
+      "user": "employee",
+      "question": "Who holds the raise roster?",
+      "doc": "HR-016",
+      "fact": "Lily Desk"
+    },
+    {
+      "id": "D07",
+      "scenario": "deny",
+      "user": "engineer",
+      "question": "星桥发布的验收口令是什么？",
+      "doc": "RD-001",
+      "fact": "RD-CEDAR-41"
+    },
+    {
+      "id": "D08",
+      "scenario": "deny",
+      "user": "admin",
+      "question": "What is the fault drill site code?",
+      "doc": "RD-011",
+      "fact": "MARSH-17"
+    },
+    {
+      "id": "R01",
+      "scenario": "revoke",
+      "user": "engineer",
+      "question": "星桥发布的验收口令是什么？",
+      "doc": "RD-001",
+      "fact": "RD-CEDAR-41"
+    },
+    {
+      "id": "R02",
+      "scenario": "revoke",
+      "user": "peer",
+      "question": "蓝图归档的盒号是什么？",
+      "doc": "RD-013",
+      "fact": "QUARTZ-39"
+    },
+    {
+      "id": "R03",
+      "scenario": "revoke",
+      "user": "employee",
+      "question": "What is the build signing code?",
+      "doc": "RD-003",
+      "fact": "FIR-06"
+    },
+    {
+      "id": "R04",
+      "scenario": "revoke",
+      "user": "hr",
+      "question": "薪酬复核的内部校验码是什么？",
+      "doc": "HR-001",
+      "fact": "HR-ORCHID-72"
+    },
+    {
+      "id": "R05",
+      "scenario": "revoke",
+      "user": "admin",
+      "question": "What is the fault drill site code?",
+      "doc": "RD-011",
+      "fact": "MARSH-17"
+    },
+    {
+      "id": "R06",
+      "scenario": "revoke",
+      "user": "engineer",
+      "question": "薪级映射表的版本代号是什么？",
+      "doc": "HR-012",
+      "fact": "MAPLE-14"
+    },
+    {
+      "id": "U01",
+      "scenario": "unknown",
+      "user": "hr",
+      "question": "What is the lunar cafeteria recipe?"
+    },
+    {
+      "id": "U02",
+      "scenario": "unknown",
+      "user": "employee",
+      "question": "月面温室的浇水周期有多长？"
+    },
+    {
+      "id": "U03",
+      "scenario": "unknown",
+      "user": "engineer",
+      "question": "Which polar station tracks Neptune?"
+    },
+    {
+      "id": "U04",
+      "scenario": "unknown",
+      "user": "peer",
+      "question": "Who approved the firmware flash catering budget?"
+    },
+    {
+      "id": "U05",
+      "scenario": "unknown",
+      "user": "admin",
+      "question": "访客登记点的建筑面积是多少平方米？"
+    },
+    {
+      "id": "U06",
+      "scenario": "unknown",
+      "user": "hr",
+      "question": "研修用的火星望远镜口径是多少？"
+    },
+    {
+      "id": "U07",
+      "scenario": "unknown",
+      "user": "employee",
+      "question": "What is the shuttle driver's telephone number?"
+    },
+    {
+      "id": "U08",
+      "scenario": "unknown",
+      "user": "engineer",
+      "question": "固件烧录台的采购金额是多少？"
+    }
+  ]
+}

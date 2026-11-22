@@ -1,4 +1,5 @@
 import hashlib
+import heapq
 import hmac
 import json
 import secrets
@@ -199,6 +200,10 @@ class Store:
         return result
 
     def retrieve(self, db, user, question):
+        return [cid for _, cid in self.ranked(db, user, question, limit=1)]
+
+    def ranked(self, db, user, question, limit):
+        """Score current authorized chunks. Ties retain the original descending ID order."""
         vector = self.embedding.encode(question)
         rows = db.execute(
             """SELECT c.id,c.vector FROM chunks c JOIN docs d ON c.doc=d.id
@@ -207,11 +212,8 @@ class Store:
             + " ORDER BY c.id",
             user,
         )
-        scored = [(self.embedding.score(vector, r["vector"]), r["id"]) for r in rows]
-        if not scored:
-            return []
-        score, chunk_id = max(scored)
-        return [chunk_id] if score >= self.embedding.threshold else []
+        scored = ((self.embedding.score(vector, r["vector"]), r["id"]) for r in rows)
+        return [pair for pair in heapq.nlargest(limit, scored) if pair[0] >= self.embedding.threshold]
 
     def evidence(self, db, user, ids):
         refs = []

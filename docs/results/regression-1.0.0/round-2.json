@@ -1,0 +1,2866 @@
+{
+  "round": 2,
+  "finished_utc": "2026-11-21T07:09:23.084032+00:00",
+  "manifest_sha256": "aabe9562ee588be8ad3aa44ffeb230b4747fff23b97eb296e2d9e2c9aa07bcaa",
+  "variants": {
+    "baseline": {
+      "threshold": 0.18,
+      "cases": [
+        {
+          "id": "Q01",
+          "phases": {
+            "query": {
+              "answer": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+              "refs": [
+                {
+                  "id": "PUB-001.v1.1",
+                  "doc": "PUB-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-001.v1.1",
+                  "score": 0.57639042
+                }
+              ],
+              "context": [
+                "PUB-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q02",
+          "phases": {
+            "query": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-001.v1.1",
+                  "score": 0.62279916
+                }
+              ],
+              "context": [
+                "HR-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q03",
+          "phases": {
+            "query": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-003.v1.1",
+                  "score": 0.33333333
+                }
+              ],
+              "context": [
+                "RD-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q04",
+          "phases": {
+            "query": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-013.v1.1",
+                  "score": 0.59628479
+                }
+              ],
+              "context": [
+                "RD-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q05",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q07",
+          "phases": {
+            "query": {
+              "answer": "导师津贴 / Mentor allowance\n导师津贴每期三百四十星币。\nMentor allowance is 340 credits per cycle.",
+              "refs": [
+                {
+                  "id": "HR-003.v1.1",
+                  "doc": "HR-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-003.v1.1",
+                  "score": 0.4125685
+                }
+              ],
+              "context": [
+                "HR-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q08",
+          "phases": {
+            "query": {
+              "answer": "网络报障 / Network outage\n网络报障分机为六零三。\nCall extension 603 for network outages.",
+              "refs": [
+                {
+                  "id": "PUB-016.v1.1",
+                  "doc": "PUB-016"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-016.v1.1",
+                  "score": 0.6000992
+                }
+              ],
+              "context": [
+                "PUB-016.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q09",
+          "phases": {
+            "query": {
+              "answer": "流量回放 / Traffic replay\n流量回放窗口为十五分钟。\nThe replay window is fifteen minutes.",
+              "refs": [
+                {
+                  "id": "RD-004.v1.1",
+                  "doc": "RD-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-004.v1.1",
+                  "score": 0.64153303
+                }
+              ],
+              "context": [
+                "RD-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q10",
+          "phases": {
+            "query": {
+              "answer": "调薪清册 / Raise roster\n调薪清册由铃兰组保管。\nLily Desk holds the raise roster.",
+              "refs": [
+                {
+                  "id": "HR-016.v1.1",
+                  "doc": "HR-016"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-016.v1.1",
+                  "score": 0.33709993
+                }
+              ],
+              "context": [
+                "HR-016.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q11",
+          "phases": {
+            "query": {
+              "answer": "设备报修 / Device repair\n设备报修工单分配给松针服务台。\nSend repair tickets to Pine Desk.",
+              "refs": [
+                {
+                  "id": "PUB-004.v1.1",
+                  "doc": "PUB-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-004.v1.1",
+                  "score": 0.58976782
+                }
+              ],
+              "context": [
+                "PUB-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q12",
+          "phases": {
+            "query": {
+              "answer": "密钥轮换 / Key rotation\n实验密钥轮换周期为三十一天。\nRotate lab keys every thirty-one days.",
+              "refs": [
+                {
+                  "id": "RD-010.v1.1",
+                  "doc": "RD-010"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-010.v1.1",
+                  "score": 0.2236068
+                }
+              ],
+              "context": [
+                "RD-010.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q13",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q14",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q15",
+          "phases": {
+            "query": {
+              "answer": "调岗审批 / Transfer approval\n调岗审批由杜鹃小组复核。\nAzalea reviews transfer requests.",
+              "refs": [
+                {
+                  "id": "HR-004.v1.1",
+                  "doc": "HR-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-004.v1.1",
+                  "score": 0.64153303
+                }
+              ],
+              "context": [
+                "HR-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q16",
+          "phases": {
+            "query": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-011.v1.1",
+                  "score": 0.29488391
+                }
+              ],
+              "context": [
+                "RD-011.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D01",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D02",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D03",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D04",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D05",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D07",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D08",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R01",
+          "phases": {
+            "granted": {
+              "answer": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+              "refs": [
+                {
+                  "id": "RD-001.v1.1",
+                  "doc": "RD-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-001.v1.1",
+                  "score": 0.61545745
+                }
+              ],
+              "context": [
+                "RD-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+              "refs": [
+                {
+                  "id": "RD-001.v1.1",
+                  "doc": "RD-001"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-001.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R02",
+          "phases": {
+            "granted": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-013.v1.1",
+                  "score": 0.59628479
+                }
+              ],
+              "context": [
+                "RD-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-013.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R03",
+          "phases": {
+            "granted": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-003.v1.1",
+                  "score": 0.33333333
+                }
+              ],
+              "context": [
+                "RD-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-003.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R04",
+          "phases": {
+            "granted": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-001.v1.1",
+                  "score": 0.62279916
+                }
+              ],
+              "context": [
+                "HR-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "HR-001.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R05",
+          "phases": {
+            "granted": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-011.v1.1",
+                  "score": 0.29488391
+                }
+              ],
+              "context": [
+                "RD-011.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-011.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R06",
+          "phases": {
+            "granted": {
+              "answer": "薪级映射 / Pay bands\n薪级映射表的版本代号是 MAPLE-14。\nThe band map revision is MAPLE-14.",
+              "refs": [
+                {
+                  "id": "HR-012.v1.1",
+                  "doc": "HR-012"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-012.v1.1",
+                  "score": 0.67372154
+                }
+              ],
+              "context": [
+                "HR-012.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "薪级映射 / Pay bands\n薪级映射表的版本代号是 MAPLE-14。\nThe band map revision is MAPLE-14.",
+              "refs": [
+                {
+                  "id": "HR-012.v1.1",
+                  "doc": "HR-012"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "HR-012.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U01",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U02",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U03",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U04",
+          "phases": {
+            "query": {
+              "answer": "固件烧录 / Firmware flash\n固件烧录台编号为 FEN-18。\nThe flash station is FEN-18.",
+              "refs": [
+                {
+                  "id": "RD-005.v1.1",
+                  "doc": "RD-005"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-005.v1.1",
+                  "score": 0.18257419
+                }
+              ],
+              "context": [
+                "RD-005.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "U05",
+          "phases": {
+            "query": {
+              "answer": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+              "refs": [
+                {
+                  "id": "PUB-001.v1.1",
+                  "doc": "PUB-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-001.v1.1",
+                  "score": 0.39374962
+                }
+              ],
+              "context": [
+                "PUB-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "U06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U07",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U08",
+          "phases": {
+            "query": {
+              "answer": "固件烧录 / Firmware flash\n固件烧录台编号为 FEN-18。\nThe flash station is FEN-18.",
+              "refs": [
+                {
+                  "id": "RD-005.v1.1",
+                  "doc": "RD-005"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-005.v1.1",
+                  "score": 0.43033148
+                }
+              ],
+              "context": [
+                "RD-005.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        }
+      ],
+      "metrics": {
+        "hit_at_5": {
+          "passed": 12,
+          "planned": 16,
+          "errors": 0
+        },
+        "grounded": {
+          "passed": 12,
+          "planned": 16,
+          "errors": 0
+        },
+        "deny_safe": {
+          "passed": 8,
+          "planned": 8,
+          "errors": 0
+        },
+        "revoke_flow": {
+          "passed": 6,
+          "planned": 6,
+          "errors": 0
+        },
+        "abstain": {
+          "passed": 5,
+          "planned": 8,
+          "errors": 0
+        },
+        "passed": {
+          "passed": 31,
+          "planned": 38,
+          "errors": 0
+        }
+      }
+    },
+    "candidate": {
+      "threshold": 0.12,
+      "cases": [
+        {
+          "id": "Q01",
+          "phases": {
+            "query": {
+              "answer": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+              "refs": [
+                {
+                  "id": "PUB-001.v1.1",
+                  "doc": "PUB-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-001.v1.1",
+                  "score": 0.57639042
+                }
+              ],
+              "context": [
+                "PUB-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q02",
+          "phases": {
+            "query": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-001.v1.1",
+                  "score": 0.62279916
+                }
+              ],
+              "context": [
+                "HR-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q03",
+          "phases": {
+            "query": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-003.v1.1",
+                  "score": 0.33333333
+                }
+              ],
+              "context": [
+                "RD-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q04",
+          "phases": {
+            "query": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-013.v1.1",
+                  "score": 0.59628479
+                }
+              ],
+              "context": [
+                "RD-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q05",
+          "phases": {
+            "query": {
+              "answer": "班车发车 / Shuttle departure\n园区班车在南门发车。\nThe shuttle leaves from the south gate.",
+              "refs": [
+                {
+                  "id": "PUB-013.v1.1",
+                  "doc": "PUB-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-013.v1.1",
+                  "score": 0.16439899
+                }
+              ],
+              "context": [
+                "PUB-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q07",
+          "phases": {
+            "query": {
+              "answer": "导师津贴 / Mentor allowance\n导师津贴每期三百四十星币。\nMentor allowance is 340 credits per cycle.",
+              "refs": [
+                {
+                  "id": "HR-003.v1.1",
+                  "doc": "HR-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-003.v1.1",
+                  "score": 0.4125685
+                }
+              ],
+              "context": [
+                "HR-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q08",
+          "phases": {
+            "query": {
+              "answer": "网络报障 / Network outage\n网络报障分机为六零三。\nCall extension 603 for network outages.",
+              "refs": [
+                {
+                  "id": "PUB-016.v1.1",
+                  "doc": "PUB-016"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-016.v1.1",
+                  "score": 0.6000992
+                }
+              ],
+              "context": [
+                "PUB-016.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q09",
+          "phases": {
+            "query": {
+              "answer": "流量回放 / Traffic replay\n流量回放窗口为十五分钟。\nThe replay window is fifteen minutes.",
+              "refs": [
+                {
+                  "id": "RD-004.v1.1",
+                  "doc": "RD-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-004.v1.1",
+                  "score": 0.64153303
+                }
+              ],
+              "context": [
+                "RD-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q10",
+          "phases": {
+            "query": {
+              "answer": "调薪清册 / Raise roster\n调薪清册由铃兰组保管。\nLily Desk holds the raise roster.",
+              "refs": [
+                {
+                  "id": "HR-016.v1.1",
+                  "doc": "HR-016"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-016.v1.1",
+                  "score": 0.33709993
+                }
+              ],
+              "context": [
+                "HR-016.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q11",
+          "phases": {
+            "query": {
+              "answer": "设备报修 / Device repair\n设备报修工单分配给松针服务台。\nSend repair tickets to Pine Desk.",
+              "refs": [
+                {
+                  "id": "PUB-004.v1.1",
+                  "doc": "PUB-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-004.v1.1",
+                  "score": 0.58976782
+                }
+              ],
+              "context": [
+                "PUB-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q12",
+          "phases": {
+            "query": {
+              "answer": "密钥轮换 / Key rotation\n实验密钥轮换周期为三十一天。\nRotate lab keys every thirty-one days.",
+              "refs": [
+                {
+                  "id": "RD-010.v1.1",
+                  "doc": "RD-010"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-010.v1.1",
+                  "score": 0.2236068
+                }
+              ],
+              "context": [
+                "RD-010.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q13",
+          "phases": {
+            "query": {
+              "answer": "环保回收 / Recycling\n电池回收箱位于一楼茶水间。\nBattery recycling is on the first floor.",
+              "refs": [
+                {
+                  "id": "PUB-014.v1.1",
+                  "doc": "PUB-014"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-014.v1.1",
+                  "score": 0.12777531
+                }
+              ],
+              "context": [
+                "PUB-014.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q14",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": false,
+            "grounded": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "Q15",
+          "phases": {
+            "query": {
+              "answer": "调岗审批 / Transfer approval\n调岗审批由杜鹃小组复核。\nAzalea reviews transfer requests.",
+              "refs": [
+                {
+                  "id": "HR-004.v1.1",
+                  "doc": "HR-004"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-004.v1.1",
+                  "score": 0.64153303
+                },
+                {
+                  "chunk": "HR-001.v1.1",
+                  "score": 0.15289416
+                }
+              ],
+              "context": [
+                "HR-004.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "Q16",
+          "phases": {
+            "query": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-011.v1.1",
+                  "score": 0.29488391
+                }
+              ],
+              "context": [
+                "RD-011.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "hit_at_5": true,
+            "grounded": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D01",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D02",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D03",
+          "phases": {
+            "query": {
+              "answer": "档案归还 / Archive returns\n档案归还时填写银杏登记簿。\nUse the Ginkgo register for archive returns.",
+              "refs": [
+                {
+                  "id": "PUB-015.v1.1",
+                  "doc": "PUB-015"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-015.v1.1",
+                  "score": 0.17025131
+                }
+              ],
+              "context": [
+                "PUB-015.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D04",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D05",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D07",
+          "phases": {
+            "query": {
+              "answer": "灰度发布 / Canary rollout\n灰度发布的首轮比例为百分之三。\nThe initial canary is three percent.",
+              "refs": [
+                {
+                  "id": "RD-008.v1.1",
+                  "doc": "RD-008"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-008.v1.1",
+                  "score": 0.17978663
+                }
+              ],
+              "context": [
+                "RD-008.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "D08",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "deny_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R01",
+          "phases": {
+            "granted": {
+              "answer": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+              "refs": [
+                {
+                  "id": "RD-001.v1.1",
+                  "doc": "RD-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-001.v1.1",
+                  "score": 0.61545745
+                },
+                {
+                  "chunk": "RD-008.v1.1",
+                  "score": 0.17978663
+                }
+              ],
+              "context": [
+                "RD-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "星桥发布 / Starbridge release\n星桥发布的验收口令是 RD-CEDAR-41。\nThe Starbridge release marker is RD-CEDAR-41.",
+              "refs": [
+                {
+                  "id": "RD-001.v1.1",
+                  "doc": "RD-001"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "灰度发布 / Canary rollout\n灰度发布的首轮比例为百分之三。\nThe initial canary is three percent.",
+              "refs": [
+                {
+                  "id": "RD-008.v1.1",
+                  "doc": "RD-008"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-008.v1.1",
+                  "score": 0.17978663
+                }
+              ],
+              "context": [
+                "RD-008.v1.1"
+              ],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-001.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "灰度发布 / Canary rollout\n灰度发布的首轮比例为百分之三。\nThe initial canary is three percent.",
+                "refs": [
+                  {
+                    "id": "RD-008.v1.1",
+                    "doc": "RD-008"
+                  }
+                ]
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R02",
+          "phases": {
+            "granted": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-013.v1.1",
+                  "score": 0.59628479
+                }
+              ],
+              "context": [
+                "RD-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "蓝图归档 / Blueprint archive\n蓝图归档的盒号为 QUARTZ-39。\nThe archive box is QUARTZ-39.",
+              "refs": [
+                {
+                  "id": "RD-013.v1.1",
+                  "doc": "RD-013"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-013.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R03",
+          "phases": {
+            "granted": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-003.v1.1",
+                  "score": 0.33333333
+                }
+              ],
+              "context": [
+                "RD-003.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "构建签名 / Build signing\n构建签名使用代号 FIR-06。\nBuild signing uses FIR-06.",
+              "refs": [
+                {
+                  "id": "RD-003.v1.1",
+                  "doc": "RD-003"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-003.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R04",
+          "phases": {
+            "granted": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-001.v1.1",
+                  "score": 0.62279916
+                }
+              ],
+              "context": [
+                "HR-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "薪酬复核 / Salary review\n薪酬复核的内部校验码是 HR-ORCHID-72。\nThe salary review code is HR-ORCHID-72.",
+              "refs": [
+                {
+                  "id": "HR-001.v1.1",
+                  "doc": "HR-001"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "HR-001.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R05",
+          "phases": {
+            "granted": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-011.v1.1",
+                  "score": 0.29488391
+                }
+              ],
+              "context": [
+                "RD-011.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "故障演练 / Fault drill\n故障演练场地代号为 MARSH-17。\nThe drill site is MARSH-17.",
+              "refs": [
+                {
+                  "id": "RD-011.v1.1",
+                  "doc": "RD-011"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "RD-011.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "R06",
+          "phases": {
+            "granted": {
+              "answer": "薪级映射 / Pay bands\n薪级映射表的版本代号是 MAPLE-14。\nThe band map revision is MAPLE-14.",
+              "refs": [
+                {
+                  "id": "HR-012.v1.1",
+                  "doc": "HR-012"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "HR-012.v1.1",
+                  "score": 0.67372154
+                }
+              ],
+              "context": [
+                "HR-012.v1.1"
+              ],
+              "cached": false,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "warm": {
+              "answer": "薪级映射 / Pay bands\n薪级映射表的版本代号是 MAPLE-14。\nThe band map revision is MAPLE-14.",
+              "refs": [
+                {
+                  "id": "HR-012.v1.1",
+                  "doc": "HR-012"
+                }
+              ],
+              "top5": [],
+              "context": [],
+              "cached": true,
+              "epoch": 2,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "revoked": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 3,
+              "authorized": true,
+              "audit_ok": true
+            },
+            "old_links": {
+              "HR-012.v1.1": 404
+            },
+            "history": [
+              {
+                "answer": "当前可访问的资料不足，无法回答这个问题。",
+                "refs": []
+              }
+            ]
+          },
+          "checks": {
+            "granted_acl": true,
+            "granted_audit": true,
+            "warm_acl": true,
+            "warm_audit": true,
+            "granted_read": true,
+            "warm_hit": true,
+            "revoked_acl": true,
+            "revoked_audit": true,
+            "revoked_safe": true,
+            "old_links_404": true,
+            "history_safe": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U01",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U02",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U03",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U04",
+          "phases": {
+            "query": {
+              "answer": "固件烧录 / Firmware flash\n固件烧录台编号为 FEN-18。\nThe flash station is FEN-18.",
+              "refs": [
+                {
+                  "id": "RD-005.v1.1",
+                  "doc": "RD-005"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-005.v1.1",
+                  "score": 0.18257419
+                }
+              ],
+              "context": [
+                "RD-005.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "U05",
+          "phases": {
+            "query": {
+              "answer": "访客登记 / Visitor pass\n访客登记点设在青禾前台。\nThe visitor desk is at Green Hall.",
+              "refs": [
+                {
+                  "id": "PUB-001.v1.1",
+                  "doc": "PUB-001"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-001.v1.1",
+                  "score": 0.39374962
+                }
+              ],
+              "context": [
+                "PUB-001.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "U06",
+          "phases": {
+            "query": {
+              "answer": "当前可访问的资料不足，无法回答这个问题。",
+              "refs": [],
+              "top5": [],
+              "context": [],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": true
+          },
+          "status": "pass"
+        },
+        {
+          "id": "U07",
+          "phases": {
+            "query": {
+              "answer": "班车发车 / Shuttle departure\n园区班车在南门发车。\nThe shuttle leaves from the south gate.",
+              "refs": [
+                {
+                  "id": "PUB-013.v1.1",
+                  "doc": "PUB-013"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "PUB-013.v1.1",
+                  "score": 0.14704292
+                }
+              ],
+              "context": [
+                "PUB-013.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        },
+        {
+          "id": "U08",
+          "phases": {
+            "query": {
+              "answer": "固件烧录 / Firmware flash\n固件烧录台编号为 FEN-18。\nThe flash station is FEN-18.",
+              "refs": [
+                {
+                  "id": "RD-005.v1.1",
+                  "doc": "RD-005"
+                }
+              ],
+              "top5": [
+                {
+                  "chunk": "RD-005.v1.1",
+                  "score": 0.43033148
+                }
+              ],
+              "context": [
+                "RD-005.v1.1"
+              ],
+              "cached": false,
+              "epoch": 1,
+              "authorized": true,
+              "audit_ok": true
+            }
+          },
+          "checks": {
+            "query_acl": true,
+            "query_audit": true,
+            "cold": true,
+            "abstain": false
+          },
+          "status": "fail"
+        }
+      ],
+      "metrics": {
+        "hit_at_5": {
+          "passed": 14,
+          "planned": 16,
+          "errors": 0
+        },
+        "grounded": {
+          "passed": 14,
+          "planned": 16,
+          "errors": 0
+        },
+        "deny_safe": {
+          "passed": 8,
+          "planned": 8,
+          "errors": 0
+        },
+        "revoke_flow": {
+          "passed": 6,
+          "planned": 6,
+          "errors": 0
+        },
+        "abstain": {
+          "passed": 4,
+          "planned": 8,
+          "errors": 0
+        },
+        "passed": {
+          "passed": 32,
+          "planned": 38,
+          "errors": 0
+        }
+      }
+    }
+  }
+}
